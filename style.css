@@ -1,0 +1,736 @@
+body {
+	font-family: "acumin-pro",sans-serif;
+	color: #88847f;
+	font-size: 18px;
+	line-height: 1.44;
+	margin: 0;
+}
+
+
+/* `Les Titres
+----------------------------------------------------------------------------------*/
+/*
+	a faire:
+	- le bord des titres avec une classe title--section
+	
+*/
+.title {
+	font-family: 'Playfair Display', serif;
+	line-height: 1.2;
+	font-size: 48px;
+	font-weight: 400;
+	color: #2D2825;
+	text-align: center;
+}
+	.title--section {
+        display: relative;
+        height: 160px;
+        margin: 0;
+        
+	}
+
+	.title--left { 
+        text-align: left; 
+}
+    .left {
+        text-align: left;
+        padding: 0;
+}
+    .title--center {
+        text-align: center; 
+        padding: 100px 0 80px 0;
+        display: relative;
+        margin: 0;
+}
+
+
+	.title--quote { 
+		font-size: 30px;
+		font-style: italic;	
+		color: rgba(46,41,38,.8);
+	}
+	.title--quote:before {
+			content: "“";
+			font-size:80px;
+			color: #EAE9E9;
+			position: absolute;
+			top: -25px;
+	    	left: -35px;
+		}
+		.title--quote:after {
+			content: "”";	
+			font-size:80px;
+			color: #EAE9E9;
+			position: absolute;
+			top: 31px;
+	   		right: 4px;
+		}
+.title--small { /* #incarnation h3 */
+  font-size: 30px;	
+}
+
+.titlesans{
+	font-family: "acumin-pro",sans-serif;
+	font-size: 24px;
+	color: #2D2825;
+	font-weight: 700;
+	line-height: 1.2;
+}
+	.titlesans--small {
+		font-size: 18px;
+
+	}
+	.titlesans--up {
+		font-size:12px;
+		color: #FFF;
+		text-transform: uppercase;
+        padding-bottom: 20px;
+	}
+/* les titre liens */
+.title a, .titlesans a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* `Les styles des paragraphes
+---------------------------------------------------------------------------*/
+.p--bold {
+    font-weight: 700;
+}
+.p--light {
+	font-weight: 300;/*Sofia*/
+	color: #2D2825;
+}
+.p--descript {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+/* Les styles de listes 
+----------------------------------------------------------------------------*/
+.li--left {
+    float: left;
+    display: inline-block;
+}
+
+.li--right {
+    margin-left: 30px;
+    display: inline-block;
+}
+/* `les classes utiles
+-----------------------------------------------------------------------------------------*/
+
+.hide { display: none; }
+
+
+/* ` Les liens
+------------------------------------------------------------------------------------*/
+
+.logo a {
+	background: url(img/logo-hardgraft.png) no-repeat;
+	display: block;
+	width: 77px;
+	height: 50px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.link {
+	font-size: 12px;
+	color: #2D2825;
+	font-weight:bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+	.link--arrow {
+		border-bottom: 1px solid #2D2825;
+		padding: 8px 0;
+	}
+	.link--arrow:before {content: "> ";}
+	
+	.link--more {
+		border: 1px solid #2D2825;
+		border-radius: 5px;
+		padding: 19px 20px 20px 48px;
+		background: url(img/seeallarrow.png) no-repeat 20px center;
+	}
+    .link--newsletter {
+    width: 258px;
+    margin: 0;
+    padding: 15px ;
+    line-height: 100%;
+    border: 0;
+    background: none;
+    font-family: 'Playfair Display' ,sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #fff; 
+
+}
+
+    .link--submit {
+    float: right;
+    margin: 0;
+    padding: 18px 10px 19px 10px;
+    line-height: 100%;
+    border: 0;
+    background: none;
+    font-family: "acumin-pro",sans-serif;
+        font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; 
+    border-left: 1px solid rgba(175, 175, 175,.4);
+}
+
+
+.navbot {
+    list-style: none;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+	line-height: 1.8;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FFF;
+    column-count: 2;
+}
+.navbot a {
+    text-decoration: none;
+	color: inherit;
+}
+
+.navbotright {
+    list-style: none;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+	line-height: 1.8;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFF;
+
+}
+.navbotright a {
+    text-decoration: none;
+    font-style: normal;
+	color: inherit;
+
+}
+.pages {
+    text-decoration: none;
+}
+.li--pages {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "acumin-pro", sans-serif; 
+    color: #000;
+}
+.li--pages a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "acumin-pro", sans-serif; 
+    color: #000;
+    padding: 7px;
+    border: 1px solid black; 
+    border-radius: 3px;
+}
+
+
+
+/* `Les boutons
+-------------------------------------------------------------------------------------*/
+
+/*
+	a faire:
+	- ajouter le style des boutons dans Product
+*/
+.btn {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.btn__wishlist {
+	color: #ED1433;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: url(img/icon_heart_full.png)
+	left center no-repeat;
+	padding-left: 30px;
+	height: 14px;
+    font-family: "acumin-pro", sans-serif;
+}
+
+.btn__wishlist--off {
+    color: grey;
+    background: url(img/icon_heart.png) left center no-repeat;
+} 
+.btn__wishlist--off:hover {
+    color: #ED1433;
+    background: url(img/icon_heart_full.png) left center no-repeat;
+} 
+.btn_product {
+    float: right;
+    text-align: right;
+    margin-top: -41px;
+    
+}
+.btn_product--fiche {
+    float: right;
+    text-align: right;
+    padding-right: 8px;
+    
+}
+.btn_product--fiche {
+    margin-top: 100px;
+}
+
+.btn__add {
+    background-color: #D9C6AC;
+	border: 1px solid #D9C6AC;
+    padding: 8px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+    font-family: "acumin-pro", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    }
+.btn__addfiche {
+    background-color: #d0a170;
+	border: 1px solid #d0a170;
+    padding: 8px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+    font-family: "acumin-pro", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    }
+.btn__add--us {
+	font-size: 12px;
+	opacity: .7;
+	display: block;
+    }
+
+.btn--nav {
+    position: absolute;
+    background: url(img/cart.png) no-repeat;
+    background-position: left center; 
+    padding: 15px 25px;
+    border: 0;
+    white-space: normal;
+}
+
+
+
+/* `Le style des sections
+------------------------------------------------------------------------------*/
+
+/*
+	
+	problèmes:
+	- image de la banner
+	- image de incarnation
+	
+*/
+
+.section--banner {
+	background: url(img/iphonecase-big.png) no-repeat right center, url(img/bg-banner.png) #dedbd8;
+}
+.section--main {
+	background: url(img/bg-glass.png) no-repeat left top,
+	url(img/bg-bag.png) no-repeat right bottom #FAF8F6;
+}
+.section__detail--main {
+	background: url(img/bg-bag.png) no-repeat right bottom #FAF8F6;
+    padding: 20px;
+}
+.section--incarnation {
+	background: url(img/bg-glass2.png) no-repeat left bottom,
+	url(img/bg-men.png) no-repeat right 290px,
+	url(img/bg-incarnation.png) no-repeat center top;
+
+	background-size:auto,auto, 100% 290px;
+	padding-top: 290px;
+}
+.incarnation__el {
+	background: url(img/icon-designer.png) no-repeat center top;
+	padding-top: 85px;
+}
+.incarnation__el--details {
+	background-image: url(img/icon-details.png);
+}
+.incarnation__el--craft {
+	background-image: url(img/icon-leather.png);
+}
+.section--footer {
+	background: url(img/bg-footer.png) no-repeat #363433 70% bottom;
+    padding-top: 80px;
+}
+.credit {
+	background-color: #1a1817;
+	background-color: rgba(26,24,23,.4);
+}
+
+/* `La navigation
+----------------------------------------------------------------------------------------------------*/
+
+.nav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	.nav__el {
+		float: left;
+		margin-left: 40px;
+	}
+.nav__el--shop {
+    height: 80px;
+    padding-top: 19px;
+	}
+.nav__el--cart {
+
+    float: left;
+    border: none;
+	border-radius: 4px;
+	padding: 0; 
+    background: url(img/cart.png) no-repeat center left 15px;
+	background-color: #D9C6AC;
+
+	}
+
+.cart{
+    background: none;
+    border: none;
+    padding: 10px 15px 10px 40px;
+    text-align: right;
+    font-family: "acumin-pro", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: .4;
+}
+	.nav__el a {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #2D2825;
+		text-decoration: none;
+		display: inline-block;
+		height: 80px;
+		line-height: 80px;
+		opacity: .5;
+	}
+	.nav__el--actif a,
+	.nav__el a:hover,
+	.nav__el a:focus {
+		background: url(img/bg-nav.png) 
+		repeat-x left 60px;
+		opacity: 1;
+		outline: 0; 
+	}
+
+
+
+/* LES ONGLETS */
+
+.nav_tabs {
+        margin: 0;
+        vertical-align: top;
+}
+
+.tabs {
+    position: absolute;
+	padding: 0;
+    width: 1200px;
+    margin: -36px 0 0 0;
+	list-style: none;
+    font-family: "acumin-pro", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-bottom : 1px solid transparent;
+
+}
+
+.tabs--fiche {
+    position: absolute;
+	padding: 0;
+    width: 1200px;
+    margin: 103px 0 0 0;
+	list-style: none;
+    font-family: "acumin-pro", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-bottom : 1px solid transparent;
+
+}
+
+.tabs__el {
+    display: inline-block;
+    height : 45px;
+    width: 120px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin : 2px 10px 0 2px !important;
+    margin : 1px 2px 0 2px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    
+}
+
+.tabs__el a {
+    color: #a4a3a1;
+    text-decoration: none;
+    display: inline-block;
+    height: 45px;
+    width: 120px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    vertical-align: top;
+
+}
+.tabs__el--actif a {
+    height : 45px;
+    width: 120px;
+    color: #D9C6AC;
+    background-color: #FAF8F6;
+
+}
+.tabs__el a:hover,
+.tabs__el a:focus {
+    color: #D9C6AC;
+    background-color: #FAF8F6;
+}
+
+/* NAVIGATION FILTRES */
+
+.navp {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	.navp__el {
+		margin-left: 30px;
+        display: inline-block;
+	}
+.navp__el--last a {
+    margin-left: 30px;
+}
+	.navp__el a {
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #2D2825;
+		text-decoration: none;
+		display: inline-block;
+		height: 80px;
+		line-height: 80px;
+		opacity: .4;
+	}
+	.navp__el--actif a,
+	.navp__el a:hover,
+	.navp__el a:focus {
+		background: url(img/bg-nav.png) 
+		repeat-x left 60px;
+		opacity: 1;
+		outline: 0; 
+	}
+
+/* `Les formulaires
+---------------------------------------------------------------------------------*/
+
+form {
+
+        background-color: rgba(26,24,23,.4);
+        border: 1px solid rgba(175, 175, 175,.4);
+        margin: 0;
+}
+/* `Le layout
+----------------------------------------------------------------------------------------------------*/
+
+.logo {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	margin: 0;
+}
+header {
+	/* width: 1200px; */
+	height: 80px;
+	/* margin: 0 auto; */
+	position: relative;
+}
+.nav {
+	float: right;
+}
+.navp {
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+	.container--banner {
+		width: 580px;
+		padding-right: 620px;
+	}
+	.container--bannerfiche {
+		width: 400px;
+        height: 480px;
+		padding-right: 800px;
+        background: url(img/bg-bannerfiche.png) no-repeat top right;
+	}
+    .container--tabs {
+        position: relative;
+        background-color: #dadad2;
+        background: url(img/bg_1.jpg) no-repeat left top, url(img/bg_2.jpg) no-repeat right top ;
+}
+.section--banner {
+	height: 260px;
+	padding: 160px 0 177px;
+}
+.section--bannerfiche {
+	height: 260px;
+	padding: 50px 0 177px;
+    background-color: #dadad2 ;
+}
+
+.section--banprods {
+    height: 248px;
+    padding: 0;
+    background-color: #dadad2;
+
+}
+
+.title--quote {
+	width: 450px;
+	margin: 35px auto;
+	position: relative;
+}
+
+.products {
+    list-style: none;
+    padding: 0 0 60px 0;
+    margin: 0;
+    display: inline-block;
+}
+.products__el {
+    width: 374px;
+    float: left;
+    margin: 0 39px 40px 0;
+    /* modele de boite */
+    box-shadow: 0 10px 20px rgba(35, 35, 35,.04);
+    
+}
+.products__el2 {
+    width: 374px;
+    float: left;
+    margin: 0 39px 40px 0;
+    /* modele de boite */
+    box-shadow: 0 10px 20px rgba(35, 35, 35,.04);
+}
+.products__el--big {
+    width: 580px;
+}
+
+.products__el:nth-child(3n+2) {
+    margin-right: 0;
+}
+.products__el2:nth-child(3n+3) {
+    margin-right: 0;
+}
+.section--main {
+    padding: 100px 0 80px 0;
+}
+.section--main {
+    padding: 60px 0 80px 0;
+}
+
+.section--tabs {
+    height: 248px;
+    background-color: #dadad2;
+}
+.section--tabsfiche {
+    height: 248px;
+    background-color: #dadad2;
+}
+.section--allproducts {
+    width: 1200px;
+}
+.section--similarproducts {
+    background-color: #dadad2;
+    padding: 100px 0 80px 0;
+    }
+.products__info {
+    background-color: #fff;
+    padding: 29px 30px 33px 32px;
+    position: relative;
+
+}
+.description {
+    margin:0;
+    padding: 20px 30px 30px 30px;
+    height: auto;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    
+    
+}
+
+.description--li {
+    font-size: 16px;
+}
+
+.titlesans--products {
+    margin: 0 0 23px 0;
+
+}
+
+.products__img {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+.incarnation__el {
+    width: 374px;
+    margin: 0 39px 40px 0;
+    float: left;
+}
+.incarnation__el:nth-child(4) {
+    margin-right: 0;
+}
+.section--incarnation {
+    padding-bottom: 80px;
+}
+.col3 {
+    width: 270px;
+    float: left;
+}
+.col4 {
+    width: 374px;
+    margin: 0 39px 40px 0;
+    float: left;
+}
+.credit {
+    clear: both;
+    height: 33px;
+    line-height: 33px;
+    font-family: "acumin-pro", sans-serif;
+    color: #fff;
+
+}
+.credit a {
+    text-decoration: none;
+    color: #fff;
+}
+.fr { float: right;}
+.fl { float: left;}
+
